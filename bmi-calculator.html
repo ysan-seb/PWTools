@@ -1,42 +1,58 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculateur d'IMC gratuit - Indice de Masse Corporelle - PWTools</title>
-    <meta name="description" content="Calculez votre IMC (Indice de Masse Corporelle) gratuitement. Obtenez votre poids idéal et des recommandations santé personnalisées.">
-    <meta name="keywords" content="calcul imc, calculateur imc gratuit, indice masse corporelle, calculer poids idéal, bmi calculator">
-    
+    <meta name="description"
+        content="Calculez votre IMC (Indice de Masse Corporelle) gratuitement. Obtenez votre poids idéal et des recommandations santé personnalisées.">
+    <meta name="keywords"
+        content="calcul imc, calculateur imc gratuit, indice masse corporelle, calculer poids idéal, bmi calculator">
+
     <meta property="og:title" content="Calculateur IMC - PWTools">
-    <meta property="og:description" content="Calculez votre Indice de Masse Corporelle et obtenez des recommandations santé.">
-    
+    <meta property="og:description"
+        content="Calculez votre Indice de Masse Corporelle et obtenez des recommandations santé.">
+
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1WJ6VLYK5C"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-1WJ6VLYK5C');
+    </script>
 </head>
+
 <body class="bg-gray-50 text-gray-900">
     <header class="bg-white shadow-sm sticky top-0 z-50">
         <nav class="container mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
                 <a href="/" class="flex items-center space-x-2">
-                    <div class="w-10 h-10 bg-gradient-to-br from-indigo-600 to-cyan-500 rounded-lg flex items-center justify-center">
+                    <div
+                        class="w-10 h-10 bg-gradient-to-br from-indigo-600 to-cyan-500 rounded-lg flex items-center justify-center">
                         <span class="text-white font-bold text-xl">PW</span>
                     </div>
                     <span class="text-xl font-bold text-gray-900">PWTools</span>
                 </a>
-                
+
                 <div class="hidden md:flex items-center space-x-6">
                     <a href="/" class="text-gray-700 hover:text-indigo-600 transition">Accueil</a>
                     <a href="/#tools" class="text-gray-700 hover:text-indigo-600 transition">Outils</a>
                     <a href="blog.html" class="text-gray-700 hover:text-indigo-600 transition">Guide</a>
                     <a href="contact.html" class="text-gray-700 hover:text-indigo-600 transition">Contact</a>
                 </div>
-                
+
                 <button id="mobile-menu-btn" class="md:hidden text-gray-700 focus:outline-none">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
-            
+
             <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 space-y-2">
                 <a href="/" class="block text-gray-700 hover:text-indigo-600 py-2">Accueil</a>
                 <a href="/#tools" class="block text-gray-700 hover:text-indigo-600 py-2">Outils</a>
@@ -49,7 +65,7 @@
     <main class="container mx-auto px-4 py-12">
         <div class="max-w-4xl mx-auto">
             <nav class="mb-6 text-sm text-gray-600">
-                <a href="/" class="hover:text-indigo-600">Accueil</a> / 
+                <a href="/" class="hover:text-indigo-600">Accueil</a> /
                 <span class="text-gray-900">Calculateur IMC</span>
             </nav>
 
@@ -68,35 +84,19 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                     <div>
                         <label class="block text-sm font-semibold mb-2">Poids (kg) :</label>
-                        <input 
-                            type="number" 
-                            id="weight-input" 
-                            min="20" 
-                            max="300" 
-                            step="0.1"
-                            class="w-full px-4 py-3 border border-gray-300 rounded-lg text-lg"
-                            placeholder="70"
-                        >
+                        <input type="number" id="weight-input" min="20" max="300" step="0.1"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg text-lg" placeholder="70">
                     </div>
 
                     <div>
                         <label class="block text-sm font-semibold mb-2">Taille (cm) :</label>
-                        <input 
-                            type="number" 
-                            id="height-input" 
-                            min="100" 
-                            max="250" 
-                            step="0.1"
-                            class="w-full px-4 py-3 border border-gray-300 rounded-lg text-lg"
-                            placeholder="170"
-                        >
+                        <input type="number" id="height-input" min="100" max="250" step="0.1"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg text-lg" placeholder="170">
                     </div>
                 </div>
 
-                <button 
-                    id="calculate-btn" 
-                    class="w-full bg-gradient-to-r from-red-600 to-pink-600 text-white py-4 rounded-lg font-semibold text-lg hover:from-red-700 hover:to-pink-700 transition shadow-lg"
-                >
+                <button id="calculate-btn"
+                    class="w-full bg-gradient-to-r from-red-600 to-pink-600 text-white py-4 rounded-lg font-semibold text-lg hover:from-red-700 hover:to-pink-700 transition shadow-lg">
                     <i class="fas fa-calculator mr-2"></i> Calculer mon IMC
                 </button>
 
@@ -148,19 +148,22 @@
                     <i class="fas fa-info-circle text-red-600 mr-2"></i>
                     À propos de l'IMC
                 </h2>
-                
+
                 <div class="space-y-4 text-gray-700">
                     <p>
-                        L'<strong>IMC (Indice de Masse Corporelle)</strong> ou <strong>BMI (Body Mass Index)</strong> 
-                        est un indicateur utilisé pour évaluer la corpulence d'une personne en fonction de sa taille et de son poids.
+                        L'<strong>IMC (Indice de Masse Corporelle)</strong> ou <strong>BMI (Body Mass Index)</strong>
+                        est un indicateur utilisé pour évaluer la corpulence d'une personne en fonction de sa taille et
+                        de son poids.
                     </p>
-                    
+
                     <p>
-                        <strong>Formule :</strong> <code class="bg-gray-100 px-2 py-1 rounded">IMC = Poids (kg) / (Taille (m))²</code>
+                        <strong>Formule :</strong> <code
+                            class="bg-gray-100 px-2 py-1 rounded">IMC = Poids (kg) / (Taille (m))²</code>
                     </p>
-                    
+
                     <div class="bg-red-50 p-4 rounded-lg border border-red-200">
-                        <p class="font-semibold mb-2"><i class="fas fa-exclamation-triangle text-red-600 mr-2"></i>Limitations :</p>
+                        <p class="font-semibold mb-2"><i
+                                class="fas fa-exclamation-triangle text-red-600 mr-2"></i>Limitations :</p>
                         <ul class="space-y-2 text-sm">
                             <li>• L'IMC ne distingue pas la masse musculaire de la masse grasse</li>
                             <li>• Ne convient pas aux femmes enceintes, enfants, athlètes de haut niveau</li>
@@ -186,4 +189,5 @@
         });
     </script>
 </body>
+
 </html>

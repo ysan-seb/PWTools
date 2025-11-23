@@ -1,42 +1,56 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formateur JSON en ligne - Beautifier JSON gratuit - PWTools</title>
-    <meta name="description" content="Formatez, validez et embellissez vos données JSON gratuitement. Outil JSON formatter en ligne, rapide et simple. Détecte les erreurs de syntaxe.">
-    <meta name="keywords" content="json formatter, json beautifier, formateur json gratuit, valider json, prettify json">
-    
+    <meta name="description"
+        content="Formatez, validez et embellissez vos données JSON gratuitement. Outil JSON formatter en ligne, rapide et simple. Détecte les erreurs de syntaxe.">
+    <meta name="keywords"
+        content="json formatter, json beautifier, formateur json gratuit, valider json, prettify json">
+
     <meta property="og:title" content="Formateur JSON - PWTools">
     <meta property="og:description" content="Formatez et validez vos données JSON instantanément.">
-    
+
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1WJ6VLYK5C"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-1WJ6VLYK5C');
+    </script>
 </head>
+
 <body class="bg-gray-50 text-gray-900">
     <header class="bg-white shadow-sm sticky top-0 z-50">
         <nav class="container mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
                 <a href="/" class="flex items-center space-x-2">
-                    <div class="w-10 h-10 bg-gradient-to-br from-indigo-600 to-cyan-500 rounded-lg flex items-center justify-center">
+                    <div
+                        class="w-10 h-10 bg-gradient-to-br from-indigo-600 to-cyan-500 rounded-lg flex items-center justify-center">
                         <span class="text-white font-bold text-xl">PW</span>
                     </div>
                     <span class="text-xl font-bold text-gray-900">PWTools</span>
                 </a>
-                
+
                 <div class="hidden md:flex items-center space-x-6">
                     <a href="/" class="text-gray-700 hover:text-indigo-600 transition">Accueil</a>
                     <a href="/#tools" class="text-gray-700 hover:text-indigo-600 transition">Outils</a>
                     <a href="blog.html" class="text-gray-700 hover:text-indigo-600 transition">Guide</a>
                     <a href="contact.html" class="text-gray-700 hover:text-indigo-600 transition">Contact</a>
                 </div>
-                
+
                 <button id="mobile-menu-btn" class="md:hidden text-gray-700 focus:outline-none">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
-            
+
             <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 space-y-2">
                 <a href="/" class="block text-gray-700 hover:text-indigo-600 py-2">Accueil</a>
                 <a href="/#tools" class="block text-gray-700 hover:text-indigo-600 py-2">Outils</a>
@@ -49,7 +63,7 @@
     <main class="container mx-auto px-4 py-12">
         <div class="max-w-6xl mx-auto">
             <nav class="mb-6 text-sm text-gray-600">
-                <a href="/" class="hover:text-indigo-600">Accueil</a> / 
+                <a href="/" class="hover:text-indigo-600">Accueil</a> /
                 <span class="text-gray-900">Formateur JSON</span>
             </nav>
 
@@ -68,22 +82,17 @@
                     <!-- Input -->
                     <div>
                         <label class="block text-sm font-semibold mb-2">JSON à formater :</label>
-                        <textarea 
-                            id="json-input" 
+                        <textarea id="json-input"
                             class="w-full px-4 py-3 border border-gray-300 rounded-lg font-mono text-sm h-96"
-                            placeholder='{"exemple": "Collez votre JSON ici..."}'
-                        ></textarea>
+                            placeholder='{"exemple": "Collez votre JSON ici..."}'></textarea>
                     </div>
 
                     <!-- Output -->
                     <div>
                         <label class="block text-sm font-semibold mb-2">JSON formaté :</label>
-                        <textarea 
-                            id="json-output" 
-                            readonly
+                        <textarea id="json-output" readonly
                             class="w-full px-4 py-3 border border-gray-300 rounded-lg bg-gray-50 font-mono text-sm h-96"
-                            placeholder="Le résultat apparaîtra ici..."
-                        ></textarea>
+                            placeholder="Le résultat apparaîtra ici..."></textarea>
                     </div>
                 </div>
 
@@ -97,31 +106,23 @@
 
                 <!-- Buttons -->
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-                    <button 
-                        id="format-btn" 
-                        class="bg-gradient-to-r from-yellow-600 to-orange-600 text-white py-3 rounded-lg font-semibold hover:from-yellow-700 hover:to-orange-700 transition"
-                    >
+                    <button id="format-btn"
+                        class="bg-gradient-to-r from-yellow-600 to-orange-600 text-white py-3 rounded-lg font-semibold hover:from-yellow-700 hover:to-orange-700 transition">
                         <i class="fas fa-magic mr-2"></i> Formater
                     </button>
-                    
-                    <button 
-                        id="minify-btn" 
-                        class="bg-gray-700 text-white py-3 rounded-lg font-semibold hover:bg-gray-800 transition"
-                    >
+
+                    <button id="minify-btn"
+                        class="bg-gray-700 text-white py-3 rounded-lg font-semibold hover:bg-gray-800 transition">
                         <i class="fas fa-compress-alt mr-2"></i> Minifier
                     </button>
-                    
-                    <button 
-                        id="copy-btn" 
-                        class="bg-yellow-600 text-white py-3 rounded-lg font-semibold hover:bg-yellow-700 transition"
-                    >
+
+                    <button id="copy-btn"
+                        class="bg-yellow-600 text-white py-3 rounded-lg font-semibold hover:bg-yellow-700 transition">
                         <i class="fas fa-copy mr-2"></i> Copier
                     </button>
-                    
-                    <button 
-                        id="clear-btn" 
-                        class="bg-red-600 text-white py-3 rounded-lg font-semibold hover:bg-red-700 transition"
-                    >
+
+                    <button id="clear-btn"
+                        class="bg-red-600 text-white py-3 rounded-lg font-semibold hover:bg-red-700 transition">
                         <i class="fas fa-trash mr-2"></i> Effacer
                     </button>
                 </div>
@@ -132,26 +133,31 @@
                     <i class="fas fa-question-circle text-yellow-600 mr-2"></i>
                     Aide JSON
                 </h2>
-                
+
                 <div class="space-y-4 text-gray-700">
                     <p>
-                        <strong>JSON (JavaScript Object Notation)</strong> est un format d'échange de données léger et facile à lire. 
+                        <strong>JSON (JavaScript Object Notation)</strong> est un format d'échange de données léger et
+                        facile à lire.
                         Il est largement utilisé dans les API et les applications web.
                     </p>
-                    
+
                     <div class="bg-yellow-50 p-4 rounded-lg border border-yellow-200">
                         <p class="font-semibold mb-2">Fonctionnalités de cet outil :</p>
                         <ul class="space-y-2 text-sm">
-                            <li><i class="fas fa-check text-green-600 mr-2"></i><strong>Formater</strong> : Embellir le JSON avec indentation</li>
-                            <li><i class="fas fa-check text-green-600 mr-2"></i><strong>Minifier</strong> : Compresser le JSON (retirer les espaces)</li>
-                            <li><i class="fas fa-check text-green-600 mr-2"></i><strong>Valider</strong> : Vérifier la syntaxe JSON</li>
-                            <li><i class="fas fa-check text-green-600 mr-2"></i><strong>Copier</strong> : Copier dans le presse-papiers</li>
+                            <li><i class="fas fa-check text-green-600 mr-2"></i><strong>Formater</strong> : Embellir le
+                                JSON avec indentation</li>
+                            <li><i class="fas fa-check text-green-600 mr-2"></i><strong>Minifier</strong> : Compresser
+                                le JSON (retirer les espaces)</li>
+                            <li><i class="fas fa-check text-green-600 mr-2"></i><strong>Valider</strong> : Vérifier la
+                                syntaxe JSON</li>
+                            <li><i class="fas fa-check text-green-600 mr-2"></i><strong>Copier</strong> : Copier dans le
+                                presse-papiers</li>
                         </ul>
                     </div>
-                    
+
                     <p class="text-sm">
                         <i class="fas fa-exclamation-circle text-yellow-600 mr-2"></i>
-                        <strong>Erreurs courantes :</strong> Virgules en trop, guillemets simples au lieu de doubles, 
+                        <strong>Erreurs courantes :</strong> Virgules en trop, guillemets simples au lieu de doubles,
                         clés sans guillemets, virgule finale dans un objet ou tableau.
                     </p>
                 </div>
@@ -172,4 +178,5 @@
         });
     </script>
 </body>
+
 </html>
