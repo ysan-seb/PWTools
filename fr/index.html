@@ -33,7 +33,7 @@
         content="Générateur de mot de passe, testeur de force, UUID, Base64, QR code et plus.">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
 
     <!-- TailwindCSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -53,9 +53,6 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Language Detection & Redirect -->
-    <script src="/js/i18n.js"></script>
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1WJ6VLYK5C"></script>
     <script>
@@ -65,8 +62,25 @@
 
         gtag('config', 'G-1WJ6VLYK5C');
     </script>
-    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4369637237264540"
-        crossorigin="anonymous"></script> -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4369637237264540"
+        crossorigin="anonymous"></script>
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "PWTools",
+        "url": "https://pwtools.com/fr/",
+        "description": "Outils gratuits de sécurité et productivité en ligne",
+        "inLanguage": "fr-FR",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://pwtools.com/fr/?s={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
 </head>
 
 <body class="bg-gray-50 text-gray-900">
@@ -75,7 +89,7 @@
         <nav class="container mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
                 <!-- Logo -->
-                <a href="/" class="flex items-center space-x-2">
+                <a href="/fr/" class="flex items-center space-x-2">
                     <div
                         class="w-10 h-10 bg-gradient-to-br from-indigo-600 to-cyan-500 rounded-lg flex items-center justify-center">
                         <span class="text-white font-bold text-xl">PW</span>
@@ -85,10 +99,11 @@
 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center space-x-6">
-                    <a href="/" class="text-gray-700 hover:text-indigo-600 transition">Accueil</a>
+                    <a href="/fr/" class="text-gray-700 hover:text-indigo-600 transition">Accueil</a>
                     <a href="#tools" class="text-gray-700 hover:text-indigo-600 transition">Outils</a>
-                    <a href="blog.html" class="text-gray-700 hover:text-indigo-600 transition">Guide</a>
-                    <a href="contact.html" class="text-gray-700 hover:text-indigo-600 transition">Contact</a>
+                    <a href="/fr/blog.html" class="text-gray-700 hover:text-indigo-600 transition">Guide</a>
+                    <a href="/fr/contact.html" class="text-gray-700 hover:text-indigo-600 transition">Contact</a>
+                    <a href="/en/" class="text-gray-500 hover:text-indigo-600 transition text-sm">🇬🇧 EN</a>
                 </div>
 
                 <!-- Mobile Menu Button -->
@@ -99,32 +114,25 @@
 
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 space-y-2">
-                <a href="/" class="block text-gray-700 hover:text-indigo-600 py-2">Accueil</a>
+                <a href="/fr/" class="block text-gray-700 hover:text-indigo-600 py-2">Accueil</a>
                 <a href="#tools" class="block text-gray-700 hover:text-indigo-600 py-2">Outils</a>
-                <a href="blog.html" class="block text-gray-700 hover:text-indigo-600 py-2">Guide</a>
-                <a href="contact.html" class="block text-gray-700 hover:text-indigo-600 py-2">Contact</a>
+                <a href="/fr/blog.html" class="block text-gray-700 hover:text-indigo-600 py-2">Guide</a>
+                <a href="/fr/contact.html" class="block text-gray-700 hover:text-indigo-600 py-2">Contact</a>
+                <a href="/en/" class="block text-gray-700 hover:text-indigo-600 py-2">🇬🇧 English</a>
             </div>
         </nav>
     </header>
 
-    <!-- AdSense Header Banner Placeholder -->
-    <!-- <div class="bg-gray-100 border-b border-gray-200">
-        <div class="container mx-auto px-4 py-2 text-center text-sm text-gray-500"> -->
-            <!-- AdSense Header Banner 728x90 or responsive -->
-            <!-- <div class="adsense-placeholder min-h-[90px] flex items-center justify-center"> -->
-                <!-- <span class="text-xs">[AdSense Header Banner]</span> -->
-                <script async
-                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4369637237264540"
-                    crossorigin="anonymous"></script>
-                <ins class="adsbygoogle" style="display:block" data-ad-format="fluid"
-                    data-ad-layout-key="-gw-3+1f-3d+2z" data-ad-client="ca-pub-4369637237264540"
-                    data-ad-slot="4418123707"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            <!-- </div>
-        </div>
-    </div> -->
+    <!-- AdSense Header Banner -->
+    <script async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4369637237264540"
+        crossorigin="anonymous"></script>
+    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid"
+        data-ad-layout-key="-gw-3+1f-3d+2z" data-ad-client="ca-pub-4369637237264540"
+        data-ad-slot="4418123707"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
 
     <!-- Hero Section -->
     <section class="bg-gradient-to-br from-indigo-600 via-indigo-700 to-cyan-600 text-white py-20">
@@ -165,7 +173,7 @@
                         Créez des mots de passe forts et aléatoires avec options personnalisables (longueur, symboles,
                         chiffres).
                     </p>
-                    <a href="password-generator.html"
+                    <a href="/fr/password-generator.html"
                         class="inline-block bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition">
                         Ouvrir <i class="fas fa-arrow-right ml-2"></i>
                     </a>
@@ -180,7 +188,7 @@
                     <p class="text-gray-600 mb-4">
                         Évaluez instantanément la robustesse de vos mots de passe avec feedback détaillé.
                     </p>
-                    <a href="password-tester.html"
+                    <a href="/fr/password-tester.html"
                         class="inline-block bg-cyan-600 text-white px-6 py-2 rounded-lg hover:bg-cyan-700 transition">
                         Ouvrir <i class="fas fa-arrow-right ml-2"></i>
                     </a>
@@ -195,7 +203,7 @@
                     <p class="text-gray-600 mb-4">
                         Générez des phrases de passe mémorables et sécurisées (méthode Diceware).
                     </p>
-                    <a href="diceware.html"
+                    <a href="/fr/diceware.html"
                         class="inline-block bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition">
                         Ouvrir <i class="fas fa-arrow-right ml-2"></i>
                     </a>
@@ -210,7 +218,7 @@
                     <p class="text-gray-600 mb-4">
                         Créez des identifiants uniques universels (UUID v4) pour vos projets.
                     </p>
-                    <a href="uuid-generator.html"
+                    <a href="/fr/uuid-generator.html"
                         class="inline-block bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition">
                         Ouvrir <i class="fas fa-arrow-right ml-2"></i>
                     </a>
@@ -225,7 +233,7 @@
                     <p class="text-gray-600 mb-4">
                         Encodez et décodez vos chaînes de caractères en Base64 instantanément.
                     </p>
-                    <a href="base64.html"
+                    <a href="/fr/base64.html"
                         class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
                         Ouvrir <i class="fas fa-arrow-right ml-2"></i>
                     </a>
@@ -240,7 +248,7 @@
                     <p class="text-gray-600 mb-4">
                         Créez des codes QR personnalisés pour URLs, textes, contacts et plus.
                     </p>
-                    <a href="qr-generator.html"
+                    <a href="/fr/qr-generator.html"
                         class="inline-block bg-pink-600 text-white px-6 py-2 rounded-lg hover:bg-pink-700 transition">
                         Ouvrir <i class="fas fa-arrow-right ml-2"></i>
                     </a>
@@ -255,25 +263,11 @@
                     <p class="text-gray-600 mb-4">
                         Formatez, validez et embellissez vos données JSON facilement.
                     </p>
-                    <a href="json-formatter.html"
+                    <a href="/fr/json-formatter.html"
                         class="inline-block bg-yellow-600 text-white px-6 py-2 rounded-lg hover:bg-yellow-700 transition">
                         Ouvrir <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                 </div>
-
-                <!-- BMI Calculator -->
-                <!-- <div class="bg-gray-50 rounded-lg p-6 shadow-md hover:shadow-xl transition border border-gray-200">
-                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
-                        <i class="fas fa-heartbeat text-red-600 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Calculateur d'IMC</h3>
-                    <p class="text-gray-600 mb-4">
-                        Calculez votre Indice de Masse Corporelle et obtenez des recommandations santé.
-                    </p>
-                    <a href="bmi-calculator.html" class="inline-block bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-700 transition">
-                        Ouvrir <i class="fas fa-arrow-right ml-2"></i>
-                    </a>
-                </div> -->
 
                 <!-- Word Counter -->
                 <div class="bg-gray-50 rounded-lg p-6 shadow-md hover:shadow-xl transition border border-gray-200">
@@ -284,7 +278,7 @@
                     <p class="text-gray-600 mb-4">
                         Comptez les mots, caractères, phrases et paragraphes de vos textes.
                     </p>
-                    <a href="word-counter.html"
+                    <a href="/fr/word-counter.html"
                         class="inline-block bg-teal-600 text-white px-6 py-2 rounded-lg hover:bg-teal-700 transition">
                         Ouvrir <i class="fas fa-arrow-right ml-2"></i>
                     </a>
@@ -294,24 +288,15 @@
     </section>
 
     <!-- AdSense Inline Banner -->
-    <!-- <div class="bg-gray-100 py-8">
-        <div class="container mx-auto px-4 text-center"> -->
-            <!-- AdSense Inline Banner responsive -->
-            <!-- <div
-                class="adsense-placeholder min-h-[100px] flex items-center justify-center bg-white rounded-lg border border-gray-200"> -->
-                <!-- <span class="text-xs text-gray-500">[AdSense Inline Banner]</span> -->
-                <script async
-                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4369637237264540"
-                    crossorigin="anonymous"></script>
-                <ins class="adsbygoogle" style="display:block" data-ad-format="fluid"
-                    data-ad-layout-key="-gw-3+1f-3d+2z" data-ad-client="ca-pub-4369637237264540"
-                    data-ad-slot="6053912655"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            <!-- </div>
-        </div>
-    </div> -->
+    <script async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4369637237264540"
+        crossorigin="anonymous"></script>
+    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid"
+        data-ad-layout-key="-gw-3+1f-3d+2z" data-ad-client="ca-pub-4369637237264540"
+        data-ad-slot="6053912655"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
 
     <!-- Features Section -->
     <section class="py-16 bg-gray-50">
@@ -373,10 +358,10 @@
                 <div>
                     <h4 class="text-white font-semibold mb-4">Liens rapides</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="/" class="hover:text-white transition">Accueil</a></li>
+                        <li><a href="/fr/" class="hover:text-white transition">Accueil</a></li>
                         <li><a href="#tools" class="hover:text-white transition">Tous les outils</a></li>
-                        <li><a href="blog.html" class="hover:text-white transition">Guide & Blog</a></li>
-                        <li><a href="privacy.html" class="hover:text-white transition">Confidentialité</a></li>
+                        <li><a href="/fr/blog.html" class="hover:text-white transition">Guide & Blog</a></li>
+                        <li><a href="/fr/privacy.html" class="hover:text-white transition">Confidentialité</a></li>
                     </ul>
                 </div>
 
@@ -384,11 +369,11 @@
                 <div>
                     <h4 class="text-white font-semibold mb-4">Outils populaires</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="password-generator.html" class="hover:text-white transition">Générateur de mot de
+                        <li><a href="/fr/password-generator.html" class="hover:text-white transition">Générateur de mot de
                                 passe</a></li>
-                        <li><a href="password-tester.html" class="hover:text-white transition">Testeur de force</a></li>
-                        <li><a href="uuid-generator.html" class="hover:text-white transition">Générateur UUID</a></li>
-                        <li><a href="base64.html" class="hover:text-white transition">Base64 Encoder</a></li>
+                        <li><a href="/fr/password-tester.html" class="hover:text-white transition">Testeur de force</a></li>
+                        <li><a href="/fr/uuid-generator.html" class="hover:text-white transition">Générateur UUID</a></li>
+                        <li><a href="/fr/base64.html" class="hover:text-white transition">Base64 Encoder</a></li>
                     </ul>
                 </div>
 
@@ -409,7 +394,7 @@
                         </a>
                     </div>
                     <div class="mt-4">
-                        <a href="contact.html" class="text-sm hover:text-white transition">
+                        <a href="/fr/contact.html" class="text-sm hover:text-white transition">
                             <i class="fas fa-envelope mr-2"></i>Contact
                         </a>
                     </div>
@@ -418,7 +403,7 @@
 
             <div class="border-t border-gray-800 pt-8 text-center text-sm">
                 <p>&copy; 2025 PWTools. Tous droits réservés. |
-                    <a href="privacy.html" class="hover:text-white transition">Politique de confidentialité</a>
+                    <a href="/fr/privacy.html" class="hover:text-white transition">Politique de confidentialité</a>
                 </p>
             </div>
         </div>

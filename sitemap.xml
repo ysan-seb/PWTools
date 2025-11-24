@@ -1,93 +1,242 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- French Homepage -->
   <url>
-    <loc>https://pwtools.com/</loc>
-    <lastmod>2025-11-23</lastmod>
+    <loc>https://pwtools.com/fr/</loc>
+    <lastmod>2025-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pwtools.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pwtools.com/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pwtools.com/en/" />
   </url>
   
+  <!-- English Homepage -->
   <url>
-    <loc>https://pwtools.com/password-generator.html</loc>
-    <lastmod>2025-11-23</lastmod>
+    <loc>https://pwtools.com/en/</loc>
+    <lastmod>2025-11-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pwtools.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pwtools.com/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pwtools.com/en/" />
+  </url>
+  
+  <!-- Password Generator -->
+  <url>
+    <loc>https://pwtools.com/fr/password-generator.html</loc>
+    <lastmod>2025-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pwtools.com/fr/password-generator.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pwtools.com/en/password-generator.html" />
   </url>
-  
   <url>
-    <loc>https://pwtools.com/password-tester.html</loc>
-    <lastmod>2025-11-23</lastmod>
+    <loc>https://pwtools.com/en/password-generator.html</loc>
+    <lastmod>2025-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pwtools.com/fr/password-generator.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pwtools.com/en/password-generator.html" />
   </url>
   
+  <!-- Password Tester -->
   <url>
-    <loc>https://pwtools.com/diceware.html</loc>
-    <lastmod>2025-11-23</lastmod>
+    <loc>https://pwtools.com/fr/password-tester.html</loc>
+    <lastmod>2025-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pwtools.com/fr/password-tester.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pwtools.com/en/password-tester.html" />
+  </url>
+  <url>
+    <loc>https://pwtools.com/en/password-tester.html</loc>
+    <lastmod>2025-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pwtools.com/fr/password-tester.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pwtools.com/en/password-tester.html" />
+  </url>
+  
+  <!-- Diceware -->
+  <url>
+    <loc>https://pwtools.com/fr/diceware.html</loc>
+    <lastmod>2025-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pwtools.com/fr/diceware.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pwtools.com/en/diceware.html" />
   </url>
-  
   <url>
-    <loc>https://pwtools.com/uuid-generator.html</loc>
-    <lastmod>2025-11-23</lastmod>
+    <loc>https://pwtools.com/en/diceware.html</loc>
+    <lastmod>2025-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pwtools.com/fr/diceware.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pwtools.com/en/diceware.html" />
   </url>
   
+  <!-- UUID Generator -->
   <url>
-    <loc>https://pwtools.com/base64.html</loc>
-    <lastmod>2025-11-23</lastmod>
+    <loc>https://pwtools.com/fr/uuid-generator.html</loc>
+    <lastmod>2025-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pwtools.com/fr/uuid-generator.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pwtools.com/en/uuid-generator.html" />
   </url>
-  
   <url>
-    <loc>https://pwtools.com/qr-generator.html</loc>
-    <lastmod>2025-11-23</lastmod>
+    <loc>https://pwtools.com/en/uuid-generator.html</loc>
+    <lastmod>2025-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pwtools.com/fr/uuid-generator.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pwtools.com/en/uuid-generator.html" />
   </url>
   
+  <!-- Base64 -->
   <url>
-    <loc>https://pwtools.com/json-formatter.html</loc>
-    <lastmod>2025-11-23</lastmod>
+    <loc>https://pwtools.com/fr/base64.html</loc>
+    <lastmod>2025-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pwtools.com/fr/base64.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pwtools.com/en/base64.html" />
+  </url>
+  <url>
+    <loc>https://pwtools.com/en/base64.html</loc>
+    <lastmod>2025-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pwtools.com/fr/base64.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pwtools.com/en/base64.html" />
   </url>
   
-  <!-- <url>
-    <loc>https://pwtools.com/bmi-calculator.html</loc>
-    <lastmod>2025-11-23</lastmod>
+  <!-- QR Generator -->
+  <url>
+    <loc>https://pwtools.com/fr/qr-generator.html</loc>
+    <lastmod>2025-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pwtools.com/fr/qr-generator.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pwtools.com/en/qr-generator.html" />
+  </url>
+  <url>
+    <loc>https://pwtools.com/en/qr-generator.html</loc>
+    <lastmod>2025-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pwtools.com/fr/qr-generator.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pwtools.com/en/qr-generator.html" />
+  </url>
+  
+  <!-- JSON Formatter -->
+  <url>
+    <loc>https://pwtools.com/fr/json-formatter.html</loc>
+    <lastmod>2025-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pwtools.com/fr/json-formatter.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pwtools.com/en/json-formatter.html" />
+  </url>
+  <url>
+    <loc>https://pwtools.com/en/json-formatter.html</loc>
+    <lastmod>2025-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pwtools.com/fr/json-formatter.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pwtools.com/en/json-formatter.html" />
+  </url>
+  
+  <!-- Word Counter -->
+  <url>
+    <loc>https://pwtools.com/fr/word-counter.html</loc>
+    <lastmod>2025-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url> -->
-  
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pwtools.com/fr/word-counter.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pwtools.com/en/word-counter.html" />
+  </url>
   <url>
-    <loc>https://pwtools.com/word-counter.html</loc>
-    <lastmod>2025-11-23</lastmod>
+    <loc>https://pwtools.com/en/word-counter.html</loc>
+    <lastmod>2025-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pwtools.com/fr/word-counter.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pwtools.com/en/word-counter.html" />
   </url>
   
+  <!-- BMI Calculator -->
   <url>
-    <loc>https://pwtools.com/blog.html</loc>
-    <lastmod>2025-11-23</lastmod>
+    <loc>https://pwtools.com/fr/bmi-calculator.html</loc>
+    <lastmod>2025-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pwtools.com/fr/bmi-calculator.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pwtools.com/en/bmi-calculator.html" />
+  </url>
+  <url>
+    <loc>https://pwtools.com/en/bmi-calculator.html</loc>
+    <lastmod>2025-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pwtools.com/fr/bmi-calculator.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pwtools.com/en/bmi-calculator.html" />
+  </url>
+  
+  <!-- Blog -->
+  <url>
+    <loc>https://pwtools.com/fr/blog.html</loc>
+    <lastmod>2025-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pwtools.com/fr/blog.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pwtools.com/en/blog.html" />
+  </url>
+  <url>
+    <loc>https://pwtools.com/en/blog.html</loc>
+    <lastmod>2025-11-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pwtools.com/fr/blog.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pwtools.com/en/blog.html" />
   </url>
   
+  <!-- Privacy -->
   <url>
-    <loc>https://pwtools.com/privacy.html</loc>
-    <lastmod>2025-11-23</lastmod>
+    <loc>https://pwtools.com/fr/privacy.html</loc>
+    <lastmod>2025-11-24</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pwtools.com/fr/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pwtools.com/en/privacy.html" />
+  </url>
+  <url>
+    <loc>https://pwtools.com/en/privacy.html</loc>
+    <lastmod>2025-11-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pwtools.com/fr/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pwtools.com/en/privacy.html" />
   </url>
   
+  <!-- Contact -->
   <url>
-    <loc>https://pwtools.com/contact.html</loc>
-    <lastmod>2025-11-23</lastmod>
+    <loc>https://pwtools.com/fr/contact.html</loc>
+    <lastmod>2025-11-24</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pwtools.com/fr/contact.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pwtools.com/en/contact.html" />
+  </url>
+  <url>
+    <loc>https://pwtools.com/en/contact.html</loc>
+    <lastmod>2025-11-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pwtools.com/fr/contact.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pwtools.com/en/contact.html" />
   </url>
 </urlset>
