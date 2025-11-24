@@ -3,7 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#4F46E5">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="manifest" href="/manifest.json">
     <title>PWTools - Free Online Security & Productivity Tools</title>
     <meta name="description"
         content="PWTools: secure password generator, strength tester, free developer tools. Base64, UUID, QR code, JSON formatter and more. 100% private, no data storage.">
@@ -35,8 +39,21 @@
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
 
-    <!-- TailwindCSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://pagead2.googlesyndication.com">
+
+    <!-- Critical CSS inline for fast first paint -->
+    <style>
+        body{margin:0;font-family:system-ui,-apple-system,sans-serif}
+        .container{max-width:1280px;margin:0 auto}
+        header{background:#fff;box-shadow:0 1px 3px rgba(0,0,0,0.1)}
+    </style>
+
+    <!-- TailwindCSS - Deferred -->
+    <script defer src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -50,10 +67,11 @@
         }
     </script>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Awesome - Deferred -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 
-    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) - Async -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1WJ6VLYK5C"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -418,14 +436,33 @@
         </div>
     </footer>
 
-    <!-- Mobile Menu Script -->
+    <!-- Service Worker for Performance -->
     <script>
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js').catch(() => {});
+            });
+        }
+    </script>
 
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+    <!-- Mobile Menu Script - Optimized -->
+    <script>
+        // Efficient mobile menu toggle
+        (function() {
+            'use strict';
+            const toggleMenu = () => {
+                const btn = document.getElementById('mobile-menu-btn');
+                const menu = document.getElementById('mobile-menu');
+                if (btn && menu) {
+                    btn.addEventListener('click', () => menu.classList.toggle('hidden'), { passive: true });
+                }
+            };
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', toggleMenu);
+            } else {
+                toggleMenu();
+            }
+        })();
     </script>
 </body>
 

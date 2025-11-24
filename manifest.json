@@ -1,0 +1,22 @@
+{
+  "name": "PWTools - Free Online Security Tools",
+  "short_name": "PWTools",
+  "description": "Free password generator, UUID generator, Base64 encoder, QR code generator and more security tools",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4F46E5",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["productivity", "utilities", "security"],
+  "lang": "en",
+  "dir": "ltr"
+}
