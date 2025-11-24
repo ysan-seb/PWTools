@@ -46,8 +46,8 @@
                     <!-- <a href="$2contact.html" class="text-gray-700 hover:text-indigo-600 transition">Contact</a> -->
                 </div>
 
-                <button id="mobile-menu-btn" class="md:hidden text-gray-700 focus:outline-none">
-                    <i class="fas fa-bars text-2xl"></i>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700 focus:outline-none" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <i class="fas fa-bars text-2xl" aria-hidden="true"></i>
                 </button>
             </div>
 
@@ -60,7 +60,7 @@
         </nav>
     </header>
 
-    <main class="container mx-auto px-4 py-12">
+    <main role="main" class="container mx-auto px-4 py-12">
         <div class="max-w-4xl mx-auto">
             <nav class="mb-6 text-sm text-gray-600">
                 <a href="/" class="hover:text-indigo-600">Accueil</a> /
@@ -69,7 +69,7 @@
 
             <div class="text-center mb-10">
                 <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <i class="fas fa-fingerprint text-green-600 text-3xl"></i>
+                    <i class="fas fa-fingerprint text-green-600 text-3xl" aria-hidden="true"></i>
                 </div>
                 <h1 class="text-4xl font-bold mb-4">Générateur UUID / GUID</h1>
                 <p class="text-xl text-gray-600">
@@ -87,23 +87,23 @@
                         <button id="copy-btn"
                             class="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition"
                             aria-label="Copier">
-                            <i class="fas fa-copy"></i>
+                            <i class="fas fa-copy" aria-hidden="true"></i>
                         </button>
                     </div>
                     <p id="copy-feedback" class="text-sm text-green-600 mt-2 hidden">
-                        <i class="fas fa-check"></i> Copié !
+                        <i class="fas fa-check" aria-hidden="true"></i> Copié !
                     </p>
                 </div>
 
                 <div class="flex gap-3 mb-6">
                     <button id="generate-one-btn"
                         class="flex-1 bg-gradient-to-r from-green-600 to-teal-600 text-white py-3 rounded-lg font-semibold hover:from-green-700 hover:to-teal-700 transition">
-                        <i class="fas fa-sync-alt mr-2"></i> Générer un UUID
+                        <i class="fas fa-sync-alt mr-2" aria-hidden="true"></i> Générer un UUID
                     </button>
 
                     <button id="generate-bulk-btn"
                         class="flex-1 bg-gradient-to-r from-teal-600 to-cyan-600 text-white py-3 rounded-lg font-semibold hover:from-teal-700 hover:to-cyan-700 transition">
-                        <i class="fas fa-list mr-2"></i> Générer en masse
+                        <i class="fas fa-list mr-2" aria-hidden="true"></i> Générer en masse
                     </button>
                 </div>
 
@@ -134,11 +134,11 @@
                     <div class="flex gap-2">
                         <button id="copy-bulk-btn"
                             class="flex-1 bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">
-                            <i class="fas fa-copy mr-2"></i> Copier tout
+                            <i class="fas fa-copy mr-2" aria-hidden="true"></i> Copier tout
                         </button>
                         <button id="download-btn"
                             class="flex-1 bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition">
-                            <i class="fas fa-download mr-2"></i> Télécharger (.txt)
+                            <i class="fas fa-download mr-2" aria-hidden="true"></i> Télécharger (.txt)
                         </button>
                     </div>
                 </div>
@@ -146,7 +146,7 @@
 
             <div class="bg-white rounded-lg shadow-lg p-8">
                 <h2 class="text-2xl font-bold mb-6">
-                    <i class="fas fa-info-circle text-green-600 mr-2"></i>
+                    <i class="fas fa-info-circle text-green-600 mr-2" aria-hidden="true"></i>
                     Qu'est-ce qu'un UUID ?
                 </h2>
 
@@ -166,16 +166,16 @@
                     <div class="bg-green-50 p-4 rounded-lg border border-green-200">
                         <p class="font-semibold mb-2">Utilisations courantes :</p>
                         <ul class="space-y-2 text-sm">
-                            <li><i class="fas fa-check text-green-600 mr-2"></i>Identifiants de base de données</li>
-                            <li><i class="fas fa-check text-green-600 mr-2"></i>Clés de session et tokens</li>
-                            <li><i class="fas fa-check text-green-600 mr-2"></i>Identifiants de fichiers et ressources
+                            <li><i class="fas fa-check text-green-600 mr-2" aria-hidden="true"></i>Identifiants de base de données</li>
+                            <li><i class="fas fa-check text-green-600 mr-2" aria-hidden="true"></i>Clés de session et tokens</li>
+                            <li><i class="fas fa-check text-green-600 mr-2" aria-hidden="true"></i>Identifiants de fichiers et ressources
                             </li>
-                            <li><i class="fas fa-check text-green-600 mr-2"></i>IDs d'objets dans les API REST</li>
+                            <li><i class="fas fa-check text-green-600 mr-2" aria-hidden="true"></i>IDs d'objets dans les API REST</li>
                         </ul>
                     </div>
 
                     <p class="text-sm">
-                        <i class="fas fa-shield-alt text-green-600 mr-2"></i>
+                        <i class="fas fa-shield-alt text-green-600 mr-2" aria-hidden="true"></i>
                         Nos UUIDs sont générés avec <code>crypto.randomUUID()</code> pour une randomisation
                         cryptographiquement sécurisée.
                     </p>

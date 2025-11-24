@@ -48,8 +48,8 @@
                     <!-- <a href="$2contact.html" class="text-gray-700 hover:text-indigo-600 transition">Contact</a> -->
                 </div>
 
-                <button id="mobile-menu-btn" class="md:hidden text-gray-700 focus:outline-none">
-                    <i class="fas fa-bars text-2xl"></i>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700 focus:outline-none" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <i class="fas fa-bars text-2xl" aria-hidden="true"></i>
                 </button>
             </div>
 
@@ -62,7 +62,7 @@
         </nav>
     </header>
 
-    <main class="container mx-auto px-4 py-12">
+    <main role="main" class="container mx-auto px-4 py-12">
         <div class="max-w-4xl mx-auto">
             <nav class="mb-6 text-sm text-gray-600">
                 <a href="/" class="hover:text-indigo-600">Accueil</a> /
@@ -71,7 +71,7 @@
 
             <div class="text-center mb-10">
                 <div class="w-16 h-16 bg-pink-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <i class="fas fa-qrcode text-pink-600 text-3xl"></i>
+                    <i class="fas fa-qrcode text-pink-600 text-3xl" aria-hidden="true"></i>
                 </div>
                 <h1 class="text-4xl font-bold mb-4">Générateur de QR Code</h1>
                 <p class="text-xl text-gray-600">
@@ -108,7 +108,7 @@
 
                         <button id="generate-qr-btn"
                             class="w-full bg-gradient-to-r from-pink-600 to-purple-600 text-white py-3 rounded-lg font-semibold hover:from-pink-700 hover:to-purple-700 transition">
-                            <i class="fas fa-qrcode mr-2"></i> Générer le QR Code
+                            <i class="fas fa-qrcode mr-2" aria-hidden="true"></i> Générer le QR Code
                         </button>
                     </div>
 
@@ -119,14 +119,14 @@
                             class="border-2 border-gray-200 rounded-lg p-6 bg-white flex items-center justify-center min-h-[300px]">
                             <div id="qrcode" class="inline-block"></div>
                             <div id="qr-placeholder" class="text-center text-gray-400">
-                                <i class="fas fa-qrcode text-6xl mb-3"></i>
+                                <i class="fas fa-qrcode text-6xl mb-3" aria-hidden="true"></i>
                                 <p>Le QR code apparaîtra ici</p>
                             </div>
                         </div>
 
                         <button id="download-qr-btn"
                             class="w-full bg-pink-600 text-white py-3 rounded-lg font-semibold hover:bg-pink-700 transition mt-4 hidden">
-                            <i class="fas fa-download mr-2"></i> Télécharger PNG
+                            <i class="fas fa-download mr-2" aria-hidden="true"></i> Télécharger PNG
                         </button>
                     </div>
                 </div>
@@ -134,7 +134,7 @@
 
             <div class="bg-white rounded-lg shadow-lg p-8">
                 <h2 class="text-2xl font-bold mb-6">
-                    <i class="fas fa-info-circle text-pink-600 mr-2"></i>
+                    <i class="fas fa-info-circle text-pink-600 mr-2" aria-hidden="true"></i>
                     À propos des QR Codes
                 </h2>
 
@@ -148,16 +148,16 @@
                     <div class="bg-pink-50 p-4 rounded-lg border border-pink-200">
                         <p class="font-semibold mb-2">Utilisations courantes :</p>
                         <ul class="space-y-2 text-sm">
-                            <li><i class="fas fa-check text-pink-600 mr-2"></i>Partager des liens web rapidement</li>
-                            <li><i class="fas fa-check text-pink-600 mr-2"></i>Connexion WiFi instantanée</li>
-                            <li><i class="fas fa-check text-pink-600 mr-2"></i>Cartes de visite numériques</li>
-                            <li><i class="fas fa-check text-pink-600 mr-2"></i>Paiements mobiles</li>
-                            <li><i class="fas fa-check text-pink-600 mr-2"></i>Tickets et billets électroniques</li>
+                            <li><i class="fas fa-check text-pink-600 mr-2" aria-hidden="true"></i>Partager des liens web rapidement</li>
+                            <li><i class="fas fa-check text-pink-600 mr-2" aria-hidden="true"></i>Connexion WiFi instantanée</li>
+                            <li><i class="fas fa-check text-pink-600 mr-2" aria-hidden="true"></i>Cartes de visite numériques</li>
+                            <li><i class="fas fa-check text-pink-600 mr-2" aria-hidden="true"></i>Paiements mobiles</li>
+                            <li><i class="fas fa-check text-pink-600 mr-2" aria-hidden="true"></i>Tickets et billets électroniques</li>
                         </ul>
                     </div>
 
                     <p class="text-sm">
-                        <i class="fas fa-mobile-alt text-pink-600 mr-2"></i>
+                        <i class="fas fa-mobile-alt text-pink-600 mr-2" aria-hidden="true"></i>
                         Les QR codes peuvent être scannés avec l'appareil photo de n'importe quel smartphone moderne.
                     </p>
                 </div>

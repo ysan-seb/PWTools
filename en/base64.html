@@ -57,8 +57,8 @@
                     <!-- <a href="$2contact.html" class="text-gray-700 hover:text-indigo-600 transition">Contact</a> -->
                 </div>
 
-                <button id="mobile-menu-btn" class="md:hidden text-gray-700 focus:outline-none">
-                    <i class="fas fa-bars text-2xl"></i>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700 focus:outline-none" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <i class="fas fa-bars text-2xl" aria-hidden="true"></i>
                 </button>
             </div>
 
@@ -71,7 +71,7 @@
         </nav>
     </header>
 
-    <main class="container mx-auto px-4 py-12">
+    <main role="main" class="container mx-auto px-4 py-12">
         <div class="max-w-5xl mx-auto">
             <nav class="mb-6 text-sm text-gray-600">
                 <a href="/en/" class="hover:text-indigo-600">Home</a> /
@@ -80,7 +80,7 @@
 
             <div class="text-center mb-10">
                 <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <i class="fas fa-code text-blue-600 text-3xl"></i>
+                    <i class="fas fa-code text-blue-600 text-3xl" aria-hidden="true"></i>
                 </div>
                 <h1 class="text-4xl font-bold mb-4">Base64 Encoder / Decoder</h1>
                 <p class="text-xl text-gray-600">
@@ -92,7 +92,7 @@
                 <!-- Encoder -->
                 <div class="bg-white rounded-lg shadow-lg p-6">
                     <h2 class="text-2xl font-bold mb-4 flex items-center">
-                        <i class="fas fa-arrow-right text-blue-600 mr-3"></i>
+                        <i class="fas fa-arrow-right text-blue-600 mr-3" aria-hidden="true"></i>
                         Encode
                     </h2>
 
@@ -103,7 +103,7 @@
 
                     <button id="encode-btn"
                         class="w-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-cyan-700 transition mb-3">
-                        <i class="fas fa-lock mr-2"></i> Encode to Base64
+                        <i class="fas fa-lock mr-2" aria-hidden="true"></i> Encode to Base64
                     </button>
 
                     <label class="block text-sm font-semibold mb-2">Base64 result:</label>
@@ -113,14 +113,14 @@
 
                     <button id="copy-encode-btn"
                         class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
-                        <i class="fas fa-copy mr-2"></i> Copy
+                        <i class="fas fa-copy mr-2" aria-hidden="true"></i> Copy
                     </button>
                 </div>
 
                 <!-- Decoder -->
                 <div class="bg-white rounded-lg shadow-lg p-6">
                     <h2 class="text-2xl font-bold mb-4 flex items-center">
-                        <i class="fas fa-arrow-left text-cyan-600 mr-3"></i>
+                        <i class="fas fa-arrow-left text-cyan-600 mr-3" aria-hidden="true"></i>
                         Decode
                     </h2>
 
@@ -131,7 +131,7 @@
 
                     <button id="decode-btn"
                         class="w-full bg-gradient-to-r from-cyan-600 to-teal-600 text-white py-3 rounded-lg font-semibold hover:from-cyan-700 hover:to-teal-700 transition mb-3">
-                        <i class="fas fa-unlock mr-2"></i> Decode Base64
+                        <i class="fas fa-unlock mr-2" aria-hidden="true"></i> Decode Base64
                     </button>
 
                     <label class="block text-sm font-semibold mb-2">Decoded text:</label>
@@ -141,14 +141,14 @@
 
                     <button id="copy-decode-btn"
                         class="w-full bg-cyan-600 text-white py-2 rounded-lg hover:bg-cyan-700 transition">
-                        <i class="fas fa-copy mr-2"></i> Copy
+                        <i class="fas fa-copy mr-2" aria-hidden="true"></i> Copy
                     </button>
                 </div>
             </div>
 
             <div class="bg-white rounded-lg shadow-lg p-8 mt-8">
                 <h2 class="text-2xl font-bold mb-6">
-                    <i class="fas fa-info-circle text-blue-600 mr-2"></i>
+                    <i class="fas fa-info-circle text-blue-600 mr-2" aria-hidden="true"></i>
                     About Base64
                 </h2>
 
@@ -161,15 +161,15 @@
                     <div class="bg-blue-50 p-4 rounded-lg border border-blue-200">
                         <p class="font-semibold mb-2">Common uses:</p>
                         <ul class="space-y-2 text-sm">
-                            <li><i class="fas fa-check text-blue-600 mr-2"></i>Transmitting binary data via email</li>
-                            <li><i class="fas fa-check text-blue-600 mr-2"></i>Encoding images in HTML/CSS (Data URIs)</li>
-                            <li><i class="fas fa-check text-blue-600 mr-2"></i>Storing data in JSON or XML</li>
-                            <li><i class="fas fa-check text-blue-600 mr-2"></i>HTTP Basic Authentication</li>
+                            <li><i class="fas fa-check text-blue-600 mr-2" aria-hidden="true"></i>Transmitting binary data via email</li>
+                            <li><i class="fas fa-check text-blue-600 mr-2" aria-hidden="true"></i>Encoding images in HTML/CSS (Data URIs)</li>
+                            <li><i class="fas fa-check text-blue-600 mr-2" aria-hidden="true"></i>Storing data in JSON or XML</li>
+                            <li><i class="fas fa-check text-blue-600 mr-2" aria-hidden="true"></i>HTTP Basic Authentication</li>
                         </ul>
                     </div>
 
                     <p class="text-sm">
-                        <i class="fas fa-exclamation-triangle text-yellow-600 mr-2"></i>
+                        <i class="fas fa-exclamation-triangle text-yellow-600 mr-2" aria-hidden="true"></i>
                         <strong>Note:</strong> Base64 is NOT an encryption method. Encoded data can be easily decoded.
                         Do not use Base64 to protect sensitive data.
                     </p>

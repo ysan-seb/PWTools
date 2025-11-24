@@ -54,8 +54,8 @@
                     <!-- <a href="$2contact.html" class="text-gray-700 hover:text-indigo-600 transition">Contact</a> -->
                 </div>
 
-                <button id="mobile-menu-btn" class="md:hidden text-gray-700 focus:outline-none">
-                    <i class="fas fa-bars text-2xl"></i>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700 focus:outline-none" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <i class="fas fa-bars text-2xl" aria-hidden="true"></i>
                 </button>
             </div>
 
@@ -68,7 +68,7 @@
         </nav>
     </header>
 
-    <main class="container mx-auto px-4 py-12">
+    <main role="main" class="container mx-auto px-4 py-12">
         <div class="max-w-4xl mx-auto">
             <nav class="mb-6 text-sm text-gray-600">
                 <a href="/en/" class="hover:text-indigo-600">Home</a> /
@@ -77,7 +77,7 @@
 
             <div class="text-center mb-10">
                 <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <i class="fas fa-dice text-purple-600 text-3xl"></i>
+                    <i class="fas fa-dice text-purple-600 text-3xl" aria-hidden="true"></i>
                 </div>
                 <h1 class="text-4xl font-bold mb-4">Passphrase Generator</h1>
                 <p class="text-xl text-gray-600">
@@ -95,11 +95,11 @@
                         <button id="copy-btn"
                             class="px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition"
                             aria-label="Copy">
-                            <i class="fas fa-copy"></i> Copy
+                            <i class="fas fa-copy" aria-hidden="true"></i> Copy
                         </button>
                     </div>
                     <p id="copy-feedback" class="text-sm text-green-600 mt-2 hidden">
-                        <i class="fas fa-check"></i> Copied!
+                        <i class="fas fa-check" aria-hidden="true"></i> Copied!
                     </p>
                 </div>
 
@@ -140,13 +140,13 @@
 
                 <button id="generate-btn"
                     class="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white py-4 rounded-lg font-semibold text-lg hover:from-purple-700 hover:to-pink-700 transition shadow-lg">
-                    <i class="fas fa-dice mr-2"></i> Generate a passphrase
+                    <i class="fas fa-dice mr-2" aria-hidden="true"></i> Generate a passphrase
                 </button>
             </div>
 
             <div class="bg-white rounded-lg shadow-lg p-8">
                 <h2 class="text-2xl font-bold mb-6">
-                    <i class="fas fa-question-circle text-purple-600 mr-2"></i>
+                    <i class="fas fa-question-circle text-purple-600 mr-2" aria-hidden="true"></i>
                     What is Diceware?
                 </h2>
 
@@ -166,11 +166,11 @@
                     <div class="bg-purple-50 p-4 rounded-lg border border-purple-200">
                         <p class="font-semibold mb-2">Why is it secure?</p>
                         <ul class="space-y-2 text-sm">
-                            <li><i class="fas fa-check text-green-600 mr-2"></i>5 random words = about 64 bits of
+                            <li><i class="fas fa-check text-green-600 mr-2" aria-hidden="true"></i>5 random words = about 64 bits of
                                 entropy</li>
-                            <li><i class="fas fa-check text-green-600 mr-2"></i>Impossible to guess by brute force
+                            <li><i class="fas fa-check text-green-600 mr-2" aria-hidden="true"></i>Impossible to guess by brute force
                             </li>
-                            <li><i class="fas fa-check text-green-600 mr-2"></i>Resistant to dictionary attacks
+                            <li><i class="fas fa-check text-green-600 mr-2" aria-hidden="true"></i>Resistant to dictionary attacks
                             </li>
                         </ul>
                     </div>
@@ -214,9 +214,9 @@
                 <div>
                     <h4 class="text-white font-semibold mb-4">Follow us</h4>
                     <div class="flex space-x-4 text-2xl">
-                        <a href="#" class="hover:text-cyan-400 transition"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="hover:text-cyan-400 transition"><i class="fab fa-github"></i></a>
-                        <a href="#" class="hover:text-cyan-400 transition"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="hover:text-cyan-400 transition"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" class="hover:text-cyan-400 transition"><i class="fab fa-github" aria-hidden="true"></i></a>
+                        <a href="#" class="hover:text-cyan-400 transition"><i class="fab fa-facebook" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>

@@ -46,8 +46,8 @@
                     <!-- <a href="$2contact.html" class="text-gray-700 hover:text-indigo-600 transition">Contact</a> -->
                 </div>
 
-                <button id="mobile-menu-btn" class="md:hidden text-gray-700 focus:outline-none">
-                    <i class="fas fa-bars text-2xl"></i>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700 focus:outline-none" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <i class="fas fa-bars text-2xl" aria-hidden="true"></i>
                 </button>
             </div>
 
@@ -60,7 +60,7 @@
         </nav>
     </header>
 
-    <main class="container mx-auto px-4 py-12">
+    <main role="main" class="container mx-auto px-4 py-12">
         <div class="max-w-5xl mx-auto">
             <nav class="mb-6 text-sm text-gray-600">
                 <a href="/" class="hover:text-indigo-600">Accueil</a> /
@@ -69,7 +69,7 @@
 
             <div class="text-center mb-10">
                 <div class="w-16 h-16 bg-teal-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <i class="fas fa-text-height text-teal-600 text-3xl"></i>
+                    <i class="fas fa-text-height text-teal-600 text-3xl" aria-hidden="true"></i>
                 </div>
                 <h1 class="text-4xl font-bold mb-4">Compteur de mots et caractères</h1>
                 <p class="text-xl text-gray-600">
@@ -132,26 +132,26 @@
                 <div class="mt-6 flex gap-3">
                     <button id="copy-btn"
                         class="flex-1 bg-teal-600 text-white py-3 rounded-lg font-semibold hover:bg-teal-700 transition">
-                        <i class="fas fa-copy mr-2"></i> Copier le texte
+                        <i class="fas fa-copy mr-2" aria-hidden="true"></i> Copier le texte
                     </button>
 
                     <button id="clear-btn"
                         class="flex-1 bg-gray-600 text-white py-3 rounded-lg font-semibold hover:bg-gray-700 transition">
-                        <i class="fas fa-trash mr-2"></i> Effacer
+                        <i class="fas fa-trash mr-2" aria-hidden="true"></i> Effacer
                     </button>
                 </div>
             </div>
 
             <div class="bg-white rounded-lg shadow-lg p-8">
                 <h2 class="text-2xl font-bold mb-6">
-                    <i class="fas fa-lightbulb text-teal-600 mr-2"></i>
+                    <i class="fas fa-lightbulb text-teal-600 mr-2" aria-hidden="true"></i>
                     Utilisations courantes
                 </h2>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-700">
                     <div>
                         <h3 class="font-semibold mb-2 flex items-center">
-                            <i class="fas fa-pen text-teal-600 mr-2"></i>
+                            <i class="fas fa-pen text-teal-600 mr-2" aria-hidden="true"></i>
                             Pour les rédacteurs
                         </h3>
                         <ul class="space-y-1 text-sm ml-6">
@@ -163,7 +163,7 @@
 
                     <div>
                         <h3 class="font-semibold mb-2 flex items-center">
-                            <i class="fas fa-graduation-cap text-blue-600 mr-2"></i>
+                            <i class="fas fa-graduation-cap text-blue-600 mr-2" aria-hidden="true"></i>
                             Pour les étudiants
                         </h3>
                         <ul class="space-y-1 text-sm ml-6">
@@ -175,7 +175,7 @@
 
                     <div>
                         <h3 class="font-semibold mb-2 flex items-center">
-                            <i class="fas fa-bullhorn text-purple-600 mr-2"></i>
+                            <i class="fas fa-bullhorn text-purple-600 mr-2" aria-hidden="true"></i>
                             Pour les marketeurs
                         </h3>
                         <ul class="space-y-1 text-sm ml-6">
@@ -187,7 +187,7 @@
 
                     <div>
                         <h3 class="font-semibold mb-2 flex items-center">
-                            <i class="fas fa-chart-line text-orange-600 mr-2"></i>
+                            <i class="fas fa-chart-line text-orange-600 mr-2" aria-hidden="true"></i>
                             Pour le SEO
                         </h3>
                         <ul class="space-y-1 text-sm ml-6">

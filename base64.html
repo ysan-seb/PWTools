@@ -14,7 +14,21 @@
     <meta property="og:description" content="Encodez et décodez en Base64 instantanément et gratuitement.">
 
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-    `n    <!-- Preconnect to external domains -->`n    <link rel="preconnect" href="https://cdn.tailwindcss.com">`n    <link rel="preconnect" href="https://cdnjs.cloudflare.com">`n    <link rel="preconnect" href="https://www.googletagmanager.com">`n    <link rel="preconnect" href="https://pagead2.googlesyndication.com">`n`n    <!-- Critical CSS inline -->`n    <style>`n        body{margin:0;font-family:system-ui,-apple-system,sans-serif}`n        .container{max-width:1280px;margin:0 auto}`n        header{background:#fff;box-shadow:0 1px 3px rgba(0,0,0,0.1)}`n    </style>`n`n    <script defer src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://pagead2.googlesyndication.com">
+
+    <!-- Critical CSS inline -->
+    <style>
+        body{margin:0;font-family:system-ui,-apple-system,sans-serif}
+        .container{max-width:1280px;margin:0 auto}
+        header{background:#fff;box-shadow:0 1px 3px rgba(0,0,0,0.1)}
+    </style>
+
+    <script defer src="https://cdn.tailwindcss.com"></script>
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 
     <!-- Google tag (gtag.js) -->
@@ -48,7 +62,7 @@
                     <!-- <a href="$2contact.html" class="text-gray-700 hover:text-indigo-600 transition">Contact</a> -->
                 </div>
 
-                <button id="mobile-menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700 focus:outline-none" aria-label="Toggle mobile menu" aria-expanded="false">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
@@ -62,7 +76,7 @@
         </nav>
     </header>
 
-    <main class="container mx-auto px-4 py-12">
+    <main role="main" class="container mx-auto px-4 py-12">
         <div class="max-w-5xl mx-auto">
             <nav class="mb-6 text-sm text-gray-600">
                 <a href="/" class="hover:text-indigo-600">Accueil</a> /
@@ -93,8 +107,9 @@
                         placeholder="Entrez votre texte ici..."></textarea>
 
                     <button id="encode-btn"
-                        class="w-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-cyan-700 transition mb-3">
-                        <i class="fas fa-lock mr-2"></i> Encoder en Base64
+                        class="w-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-cyan-700 transition mb-3"
+                        aria-label="Encoder le texte en Base64">
+                        <i class="fas fa-lock mr-2" aria-hidden="true"></i> Encoder en Base64
                     </button>
 
                     <label class="block text-sm font-semibold mb-2">Résultat Base64 :</label>
@@ -103,8 +118,9 @@
                         placeholder="Le résultat apparaîtra ici..."></textarea>
 
                     <button id="copy-encode-btn"
-                        class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
-                        <i class="fas fa-copy mr-2"></i> Copier
+                        class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition"
+                        aria-label="Copier le résultat encodé">
+                        <i class="fas fa-copy mr-2" aria-hidden="true"></i> Copier
                     </button>
                 </div>
 
@@ -121,8 +137,9 @@
                         placeholder="Entrez votre chaîne Base64 ici..."></textarea>
 
                     <button id="decode-btn"
-                        class="w-full bg-gradient-to-r from-cyan-600 to-teal-600 text-white py-3 rounded-lg font-semibold hover:from-cyan-700 hover:to-teal-700 transition mb-3">
-                        <i class="fas fa-unlock mr-2"></i> Décoder Base64
+                        class="w-full bg-gradient-to-r from-cyan-600 to-teal-600 text-white py-3 rounded-lg font-semibold hover:from-cyan-700 hover:to-teal-700 transition mb-3"
+                        aria-label="Décoder la chaîne Base64">
+                        <i class="fas fa-unlock mr-2" aria-hidden="true"></i> Décoder Base64
                     </button>
 
                     <label class="block text-sm font-semibold mb-2">Texte décodé :</label>
@@ -131,8 +148,9 @@
                         placeholder="Le résultat apparaîtra ici..."></textarea>
 
                     <button id="copy-decode-btn"
-                        class="w-full bg-cyan-600 text-white py-2 rounded-lg hover:bg-cyan-700 transition">
-                        <i class="fas fa-copy mr-2"></i> Copier
+                        class="w-full bg-cyan-600 text-white py-2 rounded-lg hover:bg-cyan-700 transition"
+                        aria-label="Copier le résultat décodé">
+                        <i class="fas fa-copy mr-2" aria-hidden="true"></i> Copier
                     </button>
                 </div>
             </div>
@@ -179,11 +197,19 @@
         </div>
     </footer>
 
-    <script src="js/base64.js"></script>
+    <script defer src="js/base64.js"></script>
     <script>
-        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
+        (function() {
+            'use strict';
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            if (btn && menu) {
+                btn.addEventListener('click', () => {
+                    const isExpanded = menu.classList.toggle('hidden');
+                    btn.setAttribute('aria-expanded', !isExpanded);
+                }, { passive: true });
+            }
+        })();
     </script>
 </body>
 
